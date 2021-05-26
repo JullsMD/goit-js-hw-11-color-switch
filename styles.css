@@ -1,0 +1,25 @@
+body {
+background-image: url(./mikki.png);
+background-position-x: center;
+background-repeat: no-repeat;
+}
+
+button {
+padding: 30px;
+border-radius: 40%;
+background-color: transparent;
+border-color: thistle;
+border-style: double;
+border-width: 13px;
+font-size: 80px;
+font-weight: 900;
+font-family:monospace;
+
+}
+button:hover{
+    border-color: salmon;
+}
+.wrapper {
+    display: flex;
+    justify-content: space-between;
+}
