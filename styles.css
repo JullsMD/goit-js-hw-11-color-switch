@@ -19,6 +19,9 @@ font-family:monospace;
 button:hover{
     border-color: salmon;
 }
+button:disabled {
+    border-color: darkgray;
+}
 .wrapper {
     display: flex;
     justify-content: space-between;

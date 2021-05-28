@@ -21,12 +21,15 @@ let index;
 // COUNTER
 const counter = {
   isActive: false,
+
   start() {
     if (this.isActive) {
       return;
     }
     this.isActive = true;
-    
+    startBtnRef.disabled = true;
+  
+
     const currentColorIndex = () => {
     index = randomIntegerFromInterval(0, colors.length - 1);
     bodyRef.style.backgroundColor = colors[index];         
@@ -37,6 +40,7 @@ const counter = {
         
   stop() {
     this.isActive = false;
+    startBtnRef.disabled = false;
     clearInterval(intervalId);
   },
 };
